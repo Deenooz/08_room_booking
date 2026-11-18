@@ -1,6 +1,6 @@
 import pytest
 
-from booking_cost import calculate_booking_cost
+from src.booking_cost import calculate_booking_cost
 
 
 @pytest.mark.parametrize(
