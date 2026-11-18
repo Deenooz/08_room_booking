@@ -22,9 +22,7 @@ def test_valid_booking_valid(
     nightly_rate_cents,
     expected_result
 ):
-    # Arrange
 
-    # Act
     result = calculate_booking_cost(
         nights,
         nightly_rate_cents
@@ -46,9 +44,7 @@ def test_invalid_range_invalid(
     nights,
     nightly_rate_cents
 ):
-    # Arrange
 
-    # Act & Assert
     with pytest.raises(ValueError):
         calculate_booking_cost(
             nights,
@@ -73,9 +69,7 @@ def test_invalid_type_invalid(
     nights,
     nightly_rate_cents
 ):
-    # Arrange
 
-    # Act & Assert
     with pytest.raises(TypeError):
         calculate_booking_cost(
             nights,

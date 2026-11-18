@@ -15,15 +15,12 @@ def test_refundable_booking_valid(
     hours_before_checkin,
     flexible_rate
 ):
-    # Arrange
 
-    # Act
     result = is_refundable(
         hours_before_checkin,
         flexible_rate
     )
 
-    # Assert
     assert result is True
 
 
@@ -40,24 +37,20 @@ def test_non_refundable_booking_invalid(
     hours_before_checkin,
     flexible_rate
 ):
-    # Arrange
 
-    # Act
     result = is_refundable(
         hours_before_checkin,
         flexible_rate
     )
 
-    # Assert
     assert result is False
 
 
 def test_negative_hours_before_checkin_invalid():
-    # Arrange
+
     hours_before_checkin = -1
     flexible_rate = True
 
-    # Act & Assert
     with pytest.raises(ValueError):
         is_refundable(
             hours_before_checkin,
@@ -81,9 +74,7 @@ def test_invalid_type_invalid(
     hours_before_checkin,
     flexible_rate
 ):
-    # Arrange
 
-    # Act & Assert
     with pytest.raises(TypeError):
         is_refundable(
             hours_before_checkin,
