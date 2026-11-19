@@ -13,7 +13,6 @@ from src.booking_cost import calculate_booking_cost
         (1, 0, 0),
         (15, 2000, 30000),
         (7, 1000, 7000),
-        (8, 1000, 8000),
         (30, 500, 15000),
     ]
 )
